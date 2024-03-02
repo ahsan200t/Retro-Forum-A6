@@ -19,53 +19,131 @@
       <!-- navBar -->
       <div class="navbar bg-base-100 mt-10 container mx-auto">
         <div class="flex-1">
-          <a class="text-4xl font-black">Union Forum</a>
+          <a class="text-2xl font-bold lg:text-4xl lg:font-black">Union Forum</a>
         </div>
         <div class="flex-none">
-          <ul class="menu menu-horizontal px-1 gap-3">
-            <li class="bg-[#12132D08] border border-solid border-[#12132D08] rounded-full"><img src="images/home.png" alt=""></li>
-            <li class="bg-[#12132D08] border border-solid border-[#12132D08] rounded-full"><img src="images/pen.png" alt=""></i></li>
-            <li class="bg-[#12132D08] border border-solid border-[#12132D08] rounded-full"><img src="images/Vector.png" alt=""></li>
-            <li class="bg-[#12132D08] border border-solid border-[#12132D08] rounded-full"><img src="images/Flug.png" alt=""></li>
+          <div>
+            <ul class="menu menu-horizontal px-1 lg:gap-3">
+                <li class="bg-[#12132D08] border border-solid border-[#12132D08] rounded-full"><img src="images/home.png" alt=""></li>
+                <li class="bg-[#12132D08] border border-solid border-[#12132D08] rounded-full"><img src="images/pen.png" alt=""></i></li>
+                <li class="bg-[#12132D08] border border-solid border-[#12132D08] rounded-full"><img src="images/Vector.png" alt=""></li>
+                <li class="bg-[#12132D08] border border-solid border-[#12132D08] rounded-full"><img src="images/Flug.png" alt=""></li>
+          </div>
+           <div>
             <li>
-                <button class="bg-[#7B7DFC] rounded-[50px] text-xl text-white font-bold">Sign In</button>
+                <button class="bg-[#7B7DFC] rounded-[50px] text-xl text-white font-bold p-2">Sign In</button>
             </li>
+           </div>
           </ul>
         </div>
       </div>
     </header>
     <main>
-        <section>
-           <div class="flex justify-between mt-10 bg-[#12132D] bg-[url(/images/bgbanner.png)] bg-cover bg-no-repeat p-32">
+        <section class="container mx-auto">
+           <div class="w-[100%] lg:flex lg:justify-between mt-10 bg-[#12132D] bg-[url(/images/bgbanner.png)] lg:bg-cover bg-no-repeat p-5 lg:p-32">
              <!-- Text div -->
              <div class="space-y-6">
-                <h1 class="text-6xl font-black text-white">Welcome to the <br> <span class="text-[#7B7DFC]">UniOn</span> Forum</h1>
-                <p class="text-[#FFFFFFCC]">Share your favorite opinion and win and wp <br> forum coffee mug!</p>
-                <label class="input input-bordered flex items-center rounded-[50px]">
-                   <input type="text" class="grow" placeholder="Search here anything" />
+                <h1 class="text-3xl font-semibold w-[100%] lg:text-6xl lg:font-black text-white">Welcome to the <br> <span class="text-[#7B7DFC]">UniOn</span> Forum</h1>
+                <p class="text-[#FFFFFFCC] w-[100%]">Share your favorite opinion and win and wp <br> forum coffee mug!</p>
+                <label class="input lg:input-bordered flex items-center rounded-[50px]">
+                   <input type="text" class="grow w-[100%]" placeholder="Search here anything" />
                    <button class="bg-[#7B7DFC] rounded-[50px] text-xl text-white font-bold p-2">Search</button>
                  </label>
                </div>
                <!-- Users div -->
-               <div class="bg-[#FFFFFF] p-16 rounded-[32px] space-y-5">
-                <div class="flex justify-between gap-5">
+               <div class="bg-[#FFFFFF] lg:p-16 rounded-[32px] space-y-5 my-5 py-4">
+                <div class="flex justify-around lg:justify-between lg:gap-5">
                    <p>Registered Users</p>
                     <p>01</p>
                 </div>
-                <div class="flex justify-between">
+                <div class="flex justify-around lg:justify-between">
                    <p>Forum</p>
                    <p>05</p>
                 </div>
-                <div class="flex justify-between">
+                <div class="flex justify-around lg:justify-between">
                    <p>Topics</p>
                    <p>01</p>
                 </div>
-                <div class="flex justify-between">
+                <div class="flex justify-around lg:justify-between">
                    <p>Replies</p>
                    <p>01</p>
                 </div>
                </div>
            </div>
+        </section>
+        <!-- Discuss Section -->
+        <section class="container my-10 mx-auto">
+            <div class="text-center">
+                <h1 class="text-4xl font-black mb-5">Let’s Discuss</h1>
+                <p>Yes, you can run unit tests and view the results directly within the app. The <br> integrated testing features allow for a streamlined .</p>
+            </div>
+            <!-- parent div -->
+            <div class="flex justify-evenly  my-16 gap-5">
+                <!-- post div -->
+                <div class=" grid grid-cols-4 gap-5 border-solid border-2 border-[#7D7DFC]  bg-[#7D7DFC1A] rounded-3xl">
+                    <div class="bg-white w-24 h-24 rounded-xl my-auto mx-auto ">
+                        <img class="pl-20" src="images/Status.png" alt="">
+
+                    </div>
+                    <!-- main post div -->
+                   <div class="col-span-3 p-5">
+                     <!-- Author div -->
+                  <div class="flex gap-6">
+                    <p># <span>Music</span> </p>
+                    <p>Author : <span>Awlad Hossain</span></p>
+                  </div>
+
+                  <!-- title & description div -->
+                 <div>
+                    <h2 class="text-xl font-bold">10 Kids Unaware of Their Halloween Costume</h2>
+                    <p>It’s one thing to subject yourself to ha Halloween costume mishap because, <br> hey that’s your prerogative</p>
+                 </div>
+                 <!-- divider div -->
+                 <div class="my-8"><img src="images/Line 1.png" alt="">
+                </div>
+                 <!-- comment section -->
+                 <div class="flex justify-between">
+
+                    <div class="flex gap-4">
+                        <!-- Comment div -->
+                       <div class="flex items-center gap-2">
+                           <img src="images/comment (1).png" alt="">
+                           <span>500</span>
+                        </div>
+                        <!-- eye div -->
+                        <div class="flex items-center gap-2">
+                           <img src="images/eye.png" alt="">
+                           <span>1568</span>
+                        </div>
+                        <!-- timing div -->
+                        <div class="flex items-center gap-2">
+                           <img src="images/watch.png" alt="">
+                           <p><span>5</span> min</p>
+                        </div>
+   
+                    </div>
+                    <!-- message div -->
+                    <div>
+                       <img src="images/message.png" alt="">
+                    </div>
+                 </div>
+                   </div>
+
+
+                </div>
+                <!-- title div -->
+                <div class="bg-[#7D7DFC1A] rounded-xl">
+                    <!-- heading section -->
+                    <div class="flex p-4 gap-3 justify-center items-center">
+                        <h1 class="text-xl font-bold">Title</h1>
+                        <div class="flex gap-2">
+                            <img class="w-5 h-5" src="images/right.png" alt="">
+                            <p class="text-sm">Mark as read <span>0</span></p>
+                        </div>
+                    </div>
+                 
+                </div>
+            </div>
         </section>
     </main>
     <footer></footer>
