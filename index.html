@@ -73,78 +73,34 @@
         </section>
         <!-- Discuss Section -->
         <section class="container my-10 mx-auto">
-            <div class="text-center">
-                <h1 class="text-4xl font-black mb-5">Let’s Discuss</h1>
-                <p>Yes, you can run unit tests and view the results directly within the app. The <br> integrated testing features allow for a streamlined .</p>
-            </div>
-            <!-- parent div -->
-            <div class="space-y-3 lg:flex justify-between  my-16 gap-5">
-                <!-- post div -->
-                <div class="lg:flex justify-between items-center p-5 gap-5 border-solid border-2 border-[#7D7DFC]  bg-[#7D7DFC1A] rounded-3xl">
-                    <div class="bg-white w-24 h-24 rounded-xl my-auto mx-auto ">
-                        <img class="pl-20" src="images/Status.png" alt="">
+          <div class="text-center">
+              <h1 class="text-4xl font-black mb-5">Let’s Discuss</h1>
+              <p>Yes, you can run unit tests and view the results directly within the app. The <br> integrated testing features allow for a streamlined .</p>
+          </div>
+          <!-- parent div -->
+          <div class="space-y-3 lg:flex justify-between  my-16 gap-5">
+              <!-- post div -->
+              <div id="all-post-container">
+                
+              </div>
 
-                    </div>
-                    <!-- main post div -->
-                   <div class="p-2">
-                     <!-- Author div -->
-                  <div class="flex gap-6">
-                    <p># <span>Music</span> </p>
-                    <p>Author : <span>Awlad Hossain</span></p>
+
+
+              <!-- title div -->
+              <div class="bg-[#7D7DFC1A] rounded-xl">
+                  <!-- heading section -->
+                  <div class="flex p-4 gap-3 justify-between items-center">
+                      <h1 class="text-xl font-bold">Title</h1>
+                      <div class="flex gap-2">
+                          <img class="w-5 h-5" src="images/right.png" alt="">
+                          <p class="text-sm">Mark as read <span>(0)</span></p>
+                      </div>
                   </div>
-
-                  <!-- title & description div -->
-                 <div>
-                    <h2 class="text-xl font-bold w-[100%]">10 Kids Unaware of Their Halloween Costume</h2>
-                    <p class="w-[100%]">It’s one thing to subject yourself to ha Halloween costume mishap because, <br> hey that’s your prerogative</p>
-                 </div>
-                 <!-- divider div -->
-                 <div class="my-8"><img src="images/Line 1.png" alt="">
-                </div>
-                 <!-- comment section -->
-                 <div class="flex justify-between">
-
-                    <div class="flex gap-4">
-                        <!-- Comment div -->
-                       <div class="flex items-center gap-2">
-                           <img src="images/comment (1).png" alt="">
-                           <span>500</span>
-                        </div>
-                        <!-- eye div -->
-                        <div class="flex items-center gap-2">
-                           <img src="images/eye.png" alt="">
-                           <span>1568</span>
-                        </div>
-                        <!-- timing div -->
-                        <div class="flex items-center gap-2">
-                           <img src="images/watch.png" alt="">
-                           <p><span>5</span> min</p>
-                        </div>
-   
-                    </div>
-                    <!-- message div -->
-                    <div>
-                       <img src="images/message.png" alt="">
-                    </div>
-                 </div>
-                   </div>
-
-
-                </div>
-                <!-- title div -->
-                <div class="bg-[#7D7DFC1A] rounded-xl">
-                    <!-- heading section -->
-                    <div class="flex p-4 gap-3 justify-between items-center">
-                        <h1 class="text-xl font-bold">Title</h1>
-                        <div class="flex gap-2">
-                            <img class="w-5 h-5" src="images/right.png" alt="">
-                            <p class="text-sm">Mark as read <span>(0)</span></p>
-                        </div>
-                    </div>
-                 
-                </div>
-            </div>
-        </section>
+               
+              </div>
+          </div>
+      </section>
+        
         <!-- join section -->
         <section class="container mx-auto my-10">
         <div class="text-center lg:flex justify-between items-center bg-[#12132D] p-4 lg:p-14 rounded-3xl">
@@ -169,8 +125,8 @@
             <p class="text-[#12132D99]">Yes, you can run unit tests and view the results directly within the app. The <br> integrated testing features allow for a streamlined .</p>
           </div>
           <!-- post div -->
-         <div class="my-6">
-          <div class="card bg-base-100 shadow-xl">
+         <div id="latest-post-container" class="my-6">
+          <!-- <div class="card bg-base-100 shadow-xl">
             <figure class="lg:px-10 pt-10 bg-[#7D7DFC1A]">
               <img src="" alt="Shoes" class="rounded-xl" />
             </figure>
@@ -188,7 +144,7 @@
                </div>
               </div>
             </div>
-          </div>
+          </div> -->
          </div>
         </section>
     </main>
