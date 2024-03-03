@@ -24,14 +24,14 @@
         <div class="flex-none">
           <div>
             <ul class="menu menu-horizontal px-1 lg:gap-3">
-                <li class="bg-[#12132D08] border border-solid border-[#12132D08] rounded-full"><img src="images/home.png" alt=""></li>
-                <li class="bg-[#12132D08] border border-solid border-[#12132D08] rounded-full"><img src="images/pen.png" alt=""></i></li>
-                <li class="bg-[#12132D08] border border-solid border-[#12132D08] rounded-full"><img src="images/Vector.png" alt=""></li>
-                <li class="bg-[#12132D08] border border-solid border-[#12132D08] rounded-full"><img src="images/Flug.png" alt=""></li>
+                <li title="Home" class="bg-[#12132D08] border border-solid border-[#12132D08] rounded-full"><img src="images/home.png" alt=""></li>
+                <li title="Edit" class="bg-[#12132D08] border border-solid border-[#12132D08] rounded-full"><img src="images/pen.png" alt=""></i></li>
+                <li title="Add" class="bg-[#12132D08] border border-solid border-[#12132D08] rounded-full"><img src="images/Vector.png" alt=""></li>
+                <li title="join" class="bg-[#12132D08] border border-solid border-[#12132D08] rounded-full"><img src="images/Flug.png" alt=""></li>
           </div>
            <div>
             <li>
-                <button class="bg-[#7B7DFC] rounded-[50px] text-xl text-white font-bold p-2">Sign In</button>
+                <button title="Sign Up" class="bg-[#7B7DFC] rounded-[50px] text-xl text-white font-bold p-2">Sign In</button>
             </li>
            </div>
           </ul>
@@ -80,13 +80,13 @@
             <!-- parent div -->
             <div class="space-y-3 lg:flex justify-between  my-16 gap-5">
                 <!-- post div -->
-                <div class="grid grid-cols-4 gap-5 border-solid border-2 border-[#7D7DFC]  bg-[#7D7DFC1A] rounded-3xl">
+                <div class="lg:flex justify-between items-center p-5 gap-5 border-solid border-2 border-[#7D7DFC]  bg-[#7D7DFC1A] rounded-3xl">
                     <div class="bg-white w-24 h-24 rounded-xl my-auto mx-auto ">
                         <img class="pl-20" src="images/Status.png" alt="">
 
                     </div>
                     <!-- main post div -->
-                   <div class="col-span-3 p-5">
+                   <div class="p-2">
                      <!-- Author div -->
                   <div class="flex gap-6">
                     <p># <span>Music</span> </p>
@@ -134,11 +134,11 @@
                 <!-- title div -->
                 <div class="bg-[#7D7DFC1A] rounded-xl">
                     <!-- heading section -->
-                    <div class="flex p-4 gap-3 justify-center items-center">
+                    <div class="flex p-4 gap-3 justify-between items-center">
                         <h1 class="text-xl font-bold">Title</h1>
                         <div class="flex gap-2">
                             <img class="w-5 h-5" src="images/right.png" alt="">
-                            <p class="text-sm">Mark as read <span>0</span></p>
+                            <p class="text-sm">Mark as read <span>(0)</span></p>
                         </div>
                     </div>
                  
@@ -159,6 +159,37 @@
                 <img class="w-[100%]" src="images/joinforum.png" alt="">
             </div>
         </div>
+        </section>
+
+        <!-- Latest post section -->
+        <section class="container mx-auto my-10">
+          <!-- title div -->
+          <div class="text-center space-y-5">
+            <h1 class="text-4xl font-black">Latest Posts</h1>
+            <p class="text-[#12132D99]">Yes, you can run unit tests and view the results directly within the app. The <br> integrated testing features allow for a streamlined .</p>
+          </div>
+          <!-- post div -->
+         <div class="my-6">
+          <div class="card bg-base-100 shadow-xl">
+            <figure class="lg:px-10 pt-10 bg-[#7D7DFC1A]">
+              <img src="" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body gap-4">
+              <div>
+                <h2 class="card-title"><img src="images/calender.png" alt="">
+                  <span class="text-[#12132D99]">29 January 2024</span></h2>
+                  <p class="text-xl font-extrabold">What will a mars habitat force that impact in our daily life!!!</p>
+              </div>
+              <div class="card-actions">
+                <img src="images/Ellipse 1.png" alt="">
+               <div>
+                <p class="font-extrabold text-xl">Cameron Williamson</p>
+                <p>Unknown</p>
+               </div>
+              </div>
+            </div>
+          </div>
+         </div>
         </section>
     </main>
     <footer class="footer footer-center p-10 bg-base-200 text-base-content rounded">
