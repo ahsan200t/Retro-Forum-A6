@@ -46,9 +46,10 @@
                 <h1 class="text-3xl font-semibold w-[100%] lg:text-6xl lg:font-black text-white">Welcome to the <br> <span class="text-[#7B7DFC]">UniOn</span> Forum</h1>
                 <p class="text-[#FFFFFFCC] w-[100%]">Share your favorite opinion and win and wp <br> forum coffee mug!</p>
                 <label class="input lg:input-bordered flex items-center rounded-[50px]">
-                   <input type="text" class="grow w-[100%]" placeholder="Search here anything" />
-                   <button class="bg-[#7B7DFC] rounded-[50px] text-xl text-white font-bold p-2">Search</button>
+                   <input id="search-field" type="text" class="grow w-[100%]" placeholder="Search here anything" />
+                   <button onclick="handleSearch()" class="bg-[#7B7DFC] rounded-[50px] text-xl text-white font-bold p-2">Search</button>
                  </label>
+                
                </div>
                <!-- Users div -->
                <div class="bg-[#FFFFFF] lg:p-16 rounded-[32px] space-y-5 my-5 py-4">
@@ -77,17 +78,24 @@
               <h1 class="text-4xl font-black mb-5">Let’s Discuss</h1>
               <p>Yes, you can run unit tests and view the results directly within the app. The <br> integrated testing features allow for a streamlined .</p>
           </div>
+          <!-- Loading Spinner -->
+          <div id="loading-spinner" class="text-center mt-4 hidden ">
+            <span class="loading loading-spinner loading-lg"></span>
+            <span class="loading loading-spinner loading-lg"></span>
+            <span class="loading loading-spinner loading-lg"></span>
+            <span class="loading loading-spinner loading-lg"></span>
+           </div>
           <!-- parent div -->
           <div class="space-y-3 lg:flex justify-between  my-16 gap-5">
               <!-- post div -->
               <div id="all-post-container">
-                
+
               </div>
 
 
 
               <!-- title div -->
-              <div class="bg-[#7D7DFC1A] rounded-xl">
+              <div id="title-container" class="bg-[#7D7DFC1A] rounded-xl">
                   <!-- heading section -->
                   <div class="flex p-4 gap-3 justify-between items-center">
                       <h1 class="text-xl font-bold">Title</h1>
@@ -96,8 +104,17 @@
                           <p class="text-sm">Mark as read <span>(0)</span></p>
                       </div>
                   </div>
-               
+                 
+                <div class="flex p-3 bg-white m-3 rounded-lg">
+                  <h1 class="text-[16px] font-semibold">10 Kids Unaware of Their Halloween Costume</h1>
+                  <div class="flex justify-center items-center gap-2">
+                    <img class="w-4 h-3" src="images/eye.png" alt="">
+                    <span>0</span>
+                  </div>
+                </div>
+
               </div>
+
           </div>
       </section>
         
