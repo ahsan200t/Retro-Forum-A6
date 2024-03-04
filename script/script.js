@@ -63,7 +63,7 @@ const displayPost = posts => {
           </div>
           <!-- message div -->
           <div>
-            <img onclick="loadMessage('${item.title}', '${item.view_count}')" id="message-button" src="images/message.png" alt="">
+            <img onclick="loadMessage('${item.title.replace("'", "")}', '${item.view_count}')" id="message-button" src="images/message.png" alt="">
           </div>
        </div>
          </div>
@@ -120,7 +120,7 @@ const loadLatestNews = async () => {
             <div class="card-body gap-4">
               <div>
                 <h2 class="card-title"><img src="images/calender.png" alt="">
-                  <span class="text-[#12132D99]">${post?.author?.posted_date || "No Posted Date"}</span></h2>
+                  <span class="text-[#12132D99] text-xs">${post?.author?.posted_date || "No Publish Date"}</span></h2>
                   <p class="text-xl font-extrabold">${post.title}</p>
                   <p>${post.description}</p>
               </div>
@@ -137,18 +137,21 @@ const loadLatestNews = async () => {
     latestPostContainer.appendChild(div);
   })
 }
-let count = 1;
 const loadMessage = (title, view) => {
- const readSection=document.getElementById("read-count");
- const readSectionText=readSection.innerText;
- const currentReadText=parseInt(readSectionText);
-  
+
+  const readSection = document.getElementById("read-count");
+  const readSectionText = readSection.innerText;
+  let currentReadText = parseInt(readSectionText);
+  const totalRead = currentReadText + 1;
+  readSection.innerText = totalRead;
 
   const titleContainer = document.getElementById("title-container");
   const div = document.createElement("div");
+
+
   div.innerHTML = `
     <div class="flex p-3 bg-white m-3 rounded-lg">
-    <h1 class="text-[16px] font-semibold">${title.replace("","")}</h1>
+    <h1 class="text-[16px] font-semibold">${title}</h1>
     <div class="flex justify-center items-center gap-2">
       <img class="w-4 h-3" src="images/eye.png" alt="">
       <span>${view}</span>
@@ -156,7 +159,7 @@ const loadMessage = (title, view) => {
   </div>
     `;
   titleContainer.append(div);
-  
+
 };
 
 
